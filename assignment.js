@@ -1,17 +1,26 @@
 
 // feetToMile
 
-function feetToMile(inputFeet){
+    function feetToMile(inputFeet){
 
-    var mile = inputFeet / 5280;
+        if(inputFeet <= -1){
 
-}
+            return "Warnning! This is wrong input"
+        }else{
+
+            var mile = inputFeet / 5280;
+            return mile;
+        }
+    
+    }
 
     var mileResult = feetToMile(7500);
 
     console.log(mileResult);
 
 // woodCalculator 
+
+
 
 function woodCalculator(chair,tabel,bed){
 
@@ -26,6 +35,8 @@ function woodCalculator(chair,tabel,bed){
     var woodCalculatorResult = woodCalculator(5,2,4);
 
     console.log(woodCalculatorResult);
+
+
 
 
 // brickCalculator 
@@ -49,7 +60,7 @@ function brickCalculator(inputBrick){
 
     }else{
 
-        return "Please check input";
+        return "Warnning! you mistake something";
 
     }
    
@@ -59,6 +70,9 @@ var resultBrick = brickCalculator();
 
 console.log(resultBrick);
 
+
+
+
 // tinyFriend 
 
 function tinyFriend(friendName){
@@ -67,18 +81,18 @@ function tinyFriend(friendName){
 
     for(var i = 0; i <friendName.length;i++){
 
-        var friendNumbers = friendName[i];
+        var friendSerial = friendName[i];
 
-        if(friendNumbers.length < smallName.length){
+        if(friendSerial.length < smallName.length){
 
-            smallName = friendNumbers;
+            smallName = friendSerial;
         }
     }
-
     return smallName;
+    
 }
 
-var friendResult =  tinyFriend([]);
+var friendResult =  tinyFriend(['sohan','jitu','dev','nahid']);
 
 console.log(friendResult);
 
