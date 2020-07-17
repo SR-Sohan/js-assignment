@@ -5,7 +5,7 @@
 
         if(inputFeet <= -1){
 
-            return "Warnning! This is wrong input"
+            return "Warnning! This is wrong input";
         }else{
 
             var mile = inputFeet / 5280;
@@ -88,6 +88,7 @@ function tinyFriend(friendName){
             smallName = friendSerial;
         }
     }
+
     return smallName;
     
 }
